@@ -26,8 +26,8 @@ function gotPoses(results) {
         console.log(results);
         mouthX = results[0].pose.nose.x;
         mouthY = results[0].pose.nose.y;
-        console.log("mouth x=" + mouthX);
-        console.log("mouth y=" + mouthY);
+        console.log("nose x=" + mouthX);
+        console.log("nose y=" + mouthY);
     }
 }
 
