@@ -1,5 +1,5 @@
 function preload() {
-    mustache = loadImage("https://i.postimg.cc/3x3QzSGq/m.png");
+
 }
 
 function setup() {
@@ -24,8 +24,8 @@ function take_snapshot() {
 function gotPoses(results) {
     if (results.length > 0) {
         console.log(results);
-        mouthX = results[0].pose.mouth.x;
-        mouthY = results[0].pose.mouth.y;
+        mouthX = results[0].pose.nose.x;
+        mouthY = results[0].pose.nose.y;
         console.log("mouth x=" + mouthX);
         console.log("mouth y=" + mouthY);
     }
